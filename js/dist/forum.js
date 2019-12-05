@@ -164,7 +164,9 @@ flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('tviggyr/ext-
     items.add('menu nova', m('a', {
       href: 'https://3dpassion.com/nova'
     }, 'Get NOVA'));
-    items.add('menu forum', m('span', 'Forum'));
+    items.add('menu forum', m('a', {
+      href: 'http://#'
+    }, 'Forum'));
   });
   console.log('[tviggyr/ext-api-laravel] Hello, forum!');
 });
