@@ -148,7 +148,7 @@ flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('tviggyr/ext-
     items.remove('account');
   });
   Object(flarum_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_5___default.a.prototype, 'items', function (items) {
-    items.add('menu', m('a', {
+    items.add('menu-first', m('a', {
       href: 'https://3dpassion.com/cnc'
     }, 'CNC Prototyping'));
     items.add('menu', m('a', {

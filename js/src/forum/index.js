@@ -33,7 +33,7 @@ app.initializers.add('tviggyr/ext-api-laravel', () => {
     });
 
     extend(HeaderPrimary.prototype, 'items', items => {
-        items.add('menu', m('a', {href: 'https://3dpassion.com/cnc'}, 'CNC Prototyping'))
+        items.add('menu-first', m('a', {href: 'https://3dpassion.com/cnc'}, 'CNC Prototyping'))
         items.add('menu', m('a', {href: 'https://3d-passion.myshopify.com/collections/store'}, '3D passion store'))
         items.add('sub-menu', [
             m('span', 'Marketplace'),
