@@ -122,6 +122,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var flarum_components_SettingsPage__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(flarum_components_SettingsPage__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var flarum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! flarum/components/HeaderPrimary */ "flarum/components/HeaderPrimary");
 /* harmony import */ var flarum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(flarum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var flarum_components_LogInModal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! flarum/components/LogInModal */ "flarum/components/LogInModal");
+/* harmony import */ var flarum_components_LogInModal__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(flarum_components_LogInModal__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -168,7 +171,12 @@ flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('tviggyr/ext-
       href: 'http://#'
     }, 'Forum'));
   });
-  console.log('[tviggyr/ext-api-laravel] Hello, forum!');
+  Object(flarum_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_components_LogInModal__WEBPACK_IMPORTED_MODULE_6___default.a.prototype, 'init', function () {
+    this.footer = function () {
+      return [];
+    };
+  });
+  console.log('[tviggyr/ext-api-laravel] Hello, forum! fvdfvfd' + '' + '');
 });
 
 /***/ }),
@@ -203,6 +211,17 @@ module.exports = flarum.core.compat['components/Button'];
 /***/ (function(module, exports) {
 
 module.exports = flarum.core.compat['components/HeaderPrimary'];
+
+/***/ }),
+
+/***/ "flarum/components/LogInModal":
+/*!**************************************************************!*\
+  !*** external "flarum.core.compat['components/LogInModal']" ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['components/LogInModal'];
 
 /***/ }),
 

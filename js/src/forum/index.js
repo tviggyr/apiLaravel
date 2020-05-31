@@ -6,6 +6,7 @@ import UserCard
     from "flarum/components/UserCard";
 import SettingsPage from 'flarum/components/SettingsPage';
 import HeaderPrimary from 'flarum/components/HeaderPrimary';
+import LogInModal from 'flarum/components/LogInModal'
 
 
 app.initializers.add('tviggyr/ext-api-laravel', () => {
@@ -46,5 +47,14 @@ app.initializers.add('tviggyr/ext-api-laravel', () => {
         items.add('menu forum', m('a', {href: 'http://#'}, 'Forum'))
     });
 
-    console.log('[tviggyr/ext-api-laravel] Hello, forum!');
+    extend(LogInModal.prototype, 'init', function() {
+        this.footer = function () {
+            return [];
+        }
+    });
+
+
+    console.log('[tviggyr/ext-api-laravel] Hello, forum! fvdfvfd' +
+        '' +
+        '');
 });
